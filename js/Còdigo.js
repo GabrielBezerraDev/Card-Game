@@ -18,10 +18,10 @@ function teste() {
     setTimeout(function () {
         inicial.style.display ='none';
         principal.style.display ='block';
-        principal.style.transition = '4s';
+        principal.style.transition = '2.5s';
         principal.style.transform = 'translateY(0px)';
         resultado.style.transform = 'translateY(0px)';
-    }, 2000)
+    }, 1200)
 }
 
 
