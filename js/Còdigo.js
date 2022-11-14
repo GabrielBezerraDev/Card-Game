@@ -5,6 +5,7 @@ let principal = document.getElementById('mexe')
 
 
 let cartas = [carta[0],carta[1],carta[2],carta[3],carta[4]];
+let costas = [costa[0],costa[1],costa[2],costa[3],costa[4]];
 function teste() {
     document.getElementById('numero').innerHTML = cartas.length;
     let aleatorio = Math.floor(Math.random()*cartas.length);
@@ -26,34 +27,42 @@ function teste() {
 }
 
 
-function virar() {
-    carta[0].style.transform = 'rotateY(180deg)';
-    costa[0].style.transform = "rotateY(180deg)";
-
+function virar () {
+    for (let i = 0; i < cartas.length; i++) {
+        cartas[i].style.transform = 'rotateY(180deg)';
+        costas[i].style.transform = "rotateY(180deg)";
+    }
 }
 
-function virar2() {
-    carta[1].style.transform = 'rotateY(180deg)';
-    costa[1].style.transform = "rotateY(180deg)";
 
-}
+// function virar() {
+//     carta[0].style.transform = 'rotateY(180deg)';
+//     costa[0].style.transform = "rotateY(180deg)";
 
-function virar3() {
-    carta[2].style.transform = 'rotateY(180deg)';
-    costa[2].style.transform = "rotateY(180deg)";
+// }
 
-}
+// function virar2() {
+//     carta[1].style.transform = 'rotateY(180deg)';
+//     costa[1].style.transform = "rotateY(180deg)";
 
-function virar4() {
-    carta[3].style.transform = 'rotateY(180deg)';
-    costa[3].style.transform = "rotateY(180deg)";
+// }
 
-}
+// function virar3() {
+//     carta[2].style.transform = 'rotateY(180deg)';
+//     costa[2].style.transform = "rotateY(180deg)";
 
-function virar5() {
-    carta[4].style.transform = 'rotateY(180deg)';
-    costa[4].style.transform = "rotateY(180deg)";
+// }
 
-}
+// function virar4() {
+//     carta[3].style.transform = 'rotateY(180deg)';
+//     costa[3].style.transform = "rotateY(180deg)";
+
+// }
+
+// function virar5() {
+    // carta[4].style.transform = 'rotateY(180deg)';
+    // costa[4].style.transform = "rotateY(180deg)";
+
+// }
 
 
