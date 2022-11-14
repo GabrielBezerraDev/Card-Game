@@ -6,6 +6,7 @@ let principal = document.getElementById('mexe')
 
 let cartas = [carta[0],carta[1],carta[2],carta[3],carta[4]];
 function teste() {
+    document.getElementById('numero').innerHTML = cartas.length;
     let aleatorio = Math.floor(Math.random()*cartas.length);
     let resultado = cartas[aleatorio];
     let mostra = [inicial.style.opacity = '0', inicial.style.transition = '1s', 
