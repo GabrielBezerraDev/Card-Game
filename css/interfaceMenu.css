@@ -27,47 +27,6 @@ body main {
     align-items: center;
     justify-content: center;
 }
-
-body main.teste1 {
-    background-color: rgba(69, 59, 59, 0.885);
-    align-items: center;
-    justify-content: flex-start;
-    flex-direction: column;
-    gap: 30px;
-    border-radius: 16px;
-    border: 3px solid rgb(0, 0, 0);
-    overflow: hidden;
-    opacity: 0;
-}
-
-body main.teste1 h {
-    margin-top: 60px;
-    font-size: 35px;
-}
-
-body main.teste1 label {
-    text-align: center;
-}
-
-body main.teste1 label input {
-    display: block;
-    margin-top: 12px;
-    border-radius: 6px;
-    border: 2px solid black;
-}
-
-body main.teste2 {
-    background-color: blue;
-}
-
-body main.teste3 {
-    background-color: violet;
-}
-
-body main.teste4 {
-    background-color: darkgreen;
-}
-
 body main div {
     height: 360px;
     width: 240px;
@@ -90,4 +49,52 @@ body main div p {
     height: 35px;
     padding-top: 7px;
     cursor: pointer;
+}
+body main.subMenu1 {
+    background-color: rgba(69, 59, 59, 0.885);
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 30px;
+    border-radius: 16px;
+    border: 3px solid rgb(0, 0, 0);
+    overflow: hidden;
+    opacity: 0;
+}
+
+body main.subMenu1 h {
+    margin-top: 60px;
+    font-size: 35px;
+}
+
+body main.subMenu1 label {
+    text-align: center;
+}
+
+body main.subMenu1 label input {
+    display: block;
+    margin-top: 12px;
+    border-radius: 6px;
+    border: 2px solid black;
+    color: black;
+    padding: 5px 0px 5px 5px
+}
+
+body main.subMenu1 button {
+    color: black;
+    width: 50px;
+    height: 25px;
+    border-radius: 6px;
+}
+
+body main.subMenu2 {
+    background-color: blue;
+}
+
+body main.subMenu3 {
+    background-color: violet;
+}
+
+body main.subMenu4 {
+    background-color: darkgreen;
 }

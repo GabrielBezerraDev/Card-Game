@@ -7,7 +7,7 @@
     <title>Document</title>
 </head>
 <body>
-    <main id="menu">
+    <main id="menu1">
         <div>
             <p class="acessar" id="start">Começar jogo</p>
             <p class="acessar" id="cards">Criar cartas</p>
@@ -15,15 +15,16 @@
             <p class="acessar" id="sair">Sair do jogo</p>
         </div>
     </main>
-    <main class="teste1" id="game-start"  style="display:none;">
+    <main class="subMenu1" id="game-start"  style="display:none;">
         <h>Insira o jogador</h>
         <label>Jogador
-            <input type="text" name="jogador">
+            <input id="jogador" type="text" name="jogador">
         </label>
+        <button onclick="jogar()">Enviar</button>
     </main>
-    <main class="teste2" id="game-cards"  style="display:none"></main>
-    <main class="teste3" id="game-extras"  style="display:none"></main>
-    <main class="teste4" id="game-sair"  style="display:none"></main>
+    <main class="subMenu2" id="game-cards"  style="display:none"></main>
+    <main class="subMenu3" id="game-extras"  style="display:none"></main>
+    <main class="subMenu4" id="game-sair"  style="display:none"></main>
     <script src="../js/códigoMenu.js"></script>
 </body>
 </html>

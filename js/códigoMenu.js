@@ -2,12 +2,23 @@ let tagP = document.querySelectorAll('.acessar');
 
 tagP.forEach(tagPs => {tagPs.addEventListener('click', () =>{
         console.log(tagPs);
-        document.getElementById('menu').setAttribute('style','display:none');
+        document.getElementById('menu1').setAttribute('style','display:none');
         setTimeout(() => {
-        let x = document.getElementById(`game-${tagPs.id}`)
-        x.setAttribute('style','display:flex')
+        let menus = document.getElementById(`game-${tagPs.id}`)
+        menus.setAttribute('style','display:flex')
         setTimeout( () => {
-            x.style.opacity = '1';
-            x.style.transition = '5s';}, 2000)
-        }, 2000)})
+            menus.style.opacity = '1';
+            menus.style.transition = '2s';
+        }, 500)
+        }, 500)})
 })
+
+function jogar() {
+    let jogadores = []
+    let jogador = document.getElementById('jogador')
+    jogadores.push(jogador.value);
+    console.log(jogadores);
+    let transformando = JSON.stringify(jogadores)
+    localStorage.setItem('nomeJogador', transformando);
+    window.location ='htmlDasCartas.html';
+}
