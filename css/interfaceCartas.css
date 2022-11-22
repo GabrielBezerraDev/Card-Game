@@ -17,7 +17,7 @@ body {
      display: flex;
      justify-content: center;
      align-items: center;
-     flex-direction: column;
+     flex-direction: row;
      height: 100vh;
      overflow: hidden;
 }
@@ -29,17 +29,16 @@ main {
 }
 
 div#telaInicial {
-    height: 345px;
+    height: 282px;
     width: 15%;
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
-    margin-top: 130px;
+    margin-top: 25px;
     border: 3px solid rgb(0, 0, 0);
     border-radius: 16px;
     background-color: rgba(69, 59, 59, 0.885);
-
 }
 
 div#telaInicial p {
@@ -68,6 +67,32 @@ main div.carta {
     transition: 2s;
 }
 
+main.placar {
+    background-color: red;
+    height: 350px;
+    width: 200px;
+    position: relative;
+    left: 70px;
+    border: 4px solid rgb(0, 0, 0);
+    border-radius: 20px;
+    background-color: rgba(69, 59, 59, 0.885);
+    transform: translateX(580px);
+    flex-direction: column;
+
+}
+
+main.placar header {
+    height: 66px;
+
+}
+
+main.placar section {
+    height: 208px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding-left: 15px;
+}
 
 
 main div.carta div.frente1, div.frente2, div.frente3, div.frente4, div.frente5 {

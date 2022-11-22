@@ -8,10 +8,10 @@
 </head>
 <body>
     <div id="telaInicial">
-        <p>Bem-vindo <span id="player"></span>ao meu card game personalizado, para iniciar o jogo, aperte o botão <span>Start.</span></p>
+        <p>Bem-vindo ao meu card game personalizado, para iniciar o jogo, aperte o botão <span>Start.</span></p>
         <button class="aparecer" onclick="start()">Start</button>
    </div>
-    <main id="mexe" >
+    <main id="mexe" style="display: none;" >
         <div class="carta" style="display: none;">
             <div class="frente1">
                 <h>Titulo1</h>
@@ -67,6 +67,11 @@
                 <p></p>
             </div>
         </div>
+    </main>
+    <main class="placar" id="placarJogador"  style="display: none;" >
+        <header></header>
+        <section id="nomesAbaixo">
+        </section>
     </main>
     <script src="../js/códigoCartas.js"></script>
 </body>

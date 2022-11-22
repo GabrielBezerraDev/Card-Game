@@ -17,9 +17,13 @@
     </main>
     <main class="subMenu1" id="game-start"  style="display:none;">
         <h>Insira o jogador</h>
-        <label>Jogador
-            <input id="jogador" type="text" name="jogador">
-        </label>
+        <div id="novosInputs">
+            <input class="jogador" type="text" name="jogador" placeholder="nome do jogador">
+        </div>
+        <div style="display:flex; width: 200px;padding-left: 92px; gap: 21px;">
+            <p id="adicionar" onclick="adicionarInput()" style="font-size: 30px; cursor: pointer; width: 30px; text-align: center; padding-right: 14px;">+</p>
+            <p id="legenda" style="display: none;">Adicionar jogador</p>
+        </div>
         <button onclick="jogar()">Enviar</button>
     </main>
     <main class="subMenu2" id="game-cards"  style="display:none"></main>
