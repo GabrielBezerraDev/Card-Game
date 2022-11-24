@@ -46,21 +46,21 @@ function virar () {
 }
 
 let nomeJogador;
-let soma = 0;
-function player() {
-    nomeJogador = JSON.parse(localStorage.getItem('nomeJogador'));
+let numeroDeJogadores = 0 ;
+(function() {
+    numeroJogador = JSON.parse(localStorage.getItem('nomeJogador'));
     for (let i = 0; i < nomeJogador.length; i++) {
-        soma++
+        numeroJogador++
         let nomesAbaixo = document.getElementById('nomesAbaixo');
         let paragrafo = document.createElement('p');
         nomesAbaixo.appendChild(paragrafo);
         paragrafo.setAttribute('id',`paragrafo${i}`);
         let escreverParagrado = document.getElementById(`paragrafo${i}`);
-        escreverParagrado.innerHTML = `Jogador º${soma}: ${nomeJogador[i]}`;
+        escreverParagrado.innerHTML = `Jogador º${numeroJogador}: ${nomeJogador[i]}`;
 
     }
-}
-player()
+})()
+
 
 
 

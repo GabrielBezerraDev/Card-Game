@@ -16,6 +16,9 @@ function jogar() {
     let jogadores = []
     let jogador = document.querySelectorAll('.jogador')
     for (valores of jogador) {
+        if(!valores.value){
+            return alert('não pode existir jogadores sem nome')
+        }
       jogadores.push(valores.value)
     }
     let transformando = JSON.stringify(jogadores)
@@ -39,8 +42,8 @@ adicionar.addEventListener('mouseout', () => {
 let novosInputs = document.getElementById('novosInputs');
 function adicionarInput() {
     let criarInput = document.createElement('input');
-    criarInput.classList.add('jogador')
-    criarInput.setAttribute('type','text')
-    criarInput.setAttribute('placeholder','nome do jogador')
+    criarInput.classList.add('jogador');
+    criarInput.setAttribute('type','text');
+    criarInput.setAttribute('placeholder','nome do jogador');
     novosInputs.appendChild(criarInput);
 }
