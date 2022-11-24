@@ -48,19 +48,18 @@ function virar () {
 let nomeJogador;
 let numeroDeJogadores = 0 ;
 (function() {
-    numeroJogador = JSON.parse(localStorage.getItem('nomeJogador'));
+    nomeJogador = JSON.parse(localStorage.getItem('nomeJogador'));
     for (let i = 0; i < nomeJogador.length; i++) {
-        numeroJogador++
+        numeroDeJogadores++
         let nomesAbaixo = document.getElementById('nomesAbaixo');
         let paragrafo = document.createElement('p');
         nomesAbaixo.appendChild(paragrafo);
         paragrafo.setAttribute('id',`paragrafo${i}`);
         let escreverParagrado = document.getElementById(`paragrafo${i}`);
-        escreverParagrado.innerHTML = `Jogador º${numeroJogador}: ${nomeJogador[i]}`;
+        escreverParagrado.innerHTML = `Jogador ${numeroDeJogadores}º: ${nomeJogador[i]}`;
 
     }
 })()
-
 
 
 
